@@ -256,12 +256,7 @@ stars.forEach((star,index1)=>{
 //     alert("Your Feedback has been received ");
 // }
 
-// let arr = [];
-// function add()
-// {
-//     arr.push({rating: starCountFinal , review: document.getElementById("fd").value});
-
-// }
+//
 
 // function addToArray()
 // {
@@ -341,6 +336,8 @@ function paintstars(){
     });
 }
 
+let arr = [];
+
 function setdata()
 {
     var divele = document.createElement("div");
@@ -364,6 +361,10 @@ function setdata()
     document.getElementById("fd").value ="";
     localStorage.setItem("SaveData",display.innerHTML);
     getdata();
+    // arr.push({rating: starCountFinal , review: document.getElementById("fd").value});
+    
+    // var str = JSON.stringify(arr);
+    // document.write(str);
 }
 
 function getdata()
